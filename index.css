@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Termina Test Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Termina Test Regular'), url('pages/TerminaTest-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Termina Test Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Termina Test Light'), url('pages/TerminaTest-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Termina Test Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Termina Test Medium'), url('pages/TerminaTest-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Termina Test Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Termina Test Bold'), url('pages/TerminaTest-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Termina Test Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Termina Test Black'), url('pages/TerminaTest-Black.woff') format('woff');
+}
+
+/***********************************************************************************************************************************/
+
+.termina-test-regular {
+    font-family: 'Termina Test Regular';
+}
+
+.termina-test-light {
+    font-family: 'Termina Test Light';
+}
+
+.termina-test-medium {
+    font-family: 'Termina Test Medium';
+}
+
+.termina-test-bold {
+    font-family: 'Termina Test Bold';
+}
+
+.termina-test-black {
+    font-family: 'Termina Test Black';
+}
+
+/***********************************************************************************************************************************/
+
+.urbanist-light {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.urbanist-regular {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.urbanist-medium {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.urbanist-semi-bold {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.urbanist-bold {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.urbanist-extra-bold {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
