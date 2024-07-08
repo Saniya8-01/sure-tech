@@ -1,221 +1,570 @@
-@import url('./index.css');
+ html {
+     line-height: 1.15;
+     -webkit-text-size-adjust: 100%;
+ }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+ body {
+     margin: 0;
+ }
 
-::-webkit-scrollbar {
-    width: 0px;
-}
+ main {
+     display: block;
+ }
 
-.main-body {
-    width: 100%;
-    height: 100%;
-}
+ h1 {
+     font-size: 2em;
+     margin: 0.67em 0;
+ }
 
-/* .main-body::-webkit-scrollbar {
-    width: 12px;
-}
+ hr {
+     box-sizing: content-box;
+     height: 0;
+     overflow: visible;
+ }
 
-.main-body::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 25px;
-}
+ pre {
+     font-family: monospace, monospace;
+     font-size: 1em;
+ }
 
-.main-body::-webkit-scrollbar-track {
-    width: 0;
-} */
+ a {
+     background-color: transparent;
+ }
 
-.header-container {
-    width: 100%;
-    padding: 0 9rem;
-    position: absolute;
-    z-index: 10;
-    background: transparent;
-}
+ abbr[title] {
+     border-bottom: none;
+     text-decoration: underline;
+     text-decoration: underline dotted;
+ }
 
-header {
-    width: 47.625rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 4rem 0rem 1.5rem 0rem;
-}
+ b,
+ strong {
+     font-weight: bolder;
+ }
 
-header img {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
+ code,
+ kbd,
+ samp {
+     font-family: monospace, monospace;
+     font-size: 1em;
+ }
 
-hgroup {
-    display: flex;
-    align-items: center;
-    cursor: default;
-    gap: 0.2rem;
-    width: 12.831rem;
-}
+ small {
+     font-size: 80%;
+ }
 
-.hgroup-content h1,
-.hgroup-content span {
-    color: #ffffff;
-}
+ sub,
+ sup {
+     font-size: 75%;
+     line-height: 0;
+     position: relative;
+     vertical-align: baseline;
+ }
 
-nav {
-    width: 31rem;
-}
+ sub {
+     bottom: -0.25em;
+ }
 
-nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 0.5rem;
-}
+ sup {
+     top: -0.5em;
+ }
 
-nav ul li {
-    color: #ffffff;
-    line-height: 21.6px;
-    font-size: 1.125rem;
-    font-family: "Urbanist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    cursor: pointer;
-    padding: 0.5rem;
-}
+ img {
+     border-style: none;
+ }
 
-.menu-icon {
-    display: none;
-    align-items: center;
-    justify-content: flex-end;
-    cursor: pointer;
-}
+ button,
+ input,
+ optgroup,
+ select,
+ textarea {
+     font-family: inherit;
+     font-size: 100%;
+     line-height: 1.15;
+     margin: 0;
+ }
 
-.menu-icon img {
-    width: 2rem;
-}
+ button,
+ input {
+     overflow: visible;
+ }
 
-.carousel {
-    height: 100vh;
-    align-items: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-}
+ button,
+ select {
+     text-transform: none;
+ }
 
-.carousel-inner {
-    width: 100%;
-    display: block;
-    transition: transform 0.5s ease;
-}
+ button,
+ [type="button"],
+ [type="reset"],
+ [type="submit"] {
+     --webkit-appearance: button;
+ }
 
-.carousel-item {
-    width: 100%;
-    display: flex;
-    position: absolute;
-}
+ button::-moz-focus-inner,
+ [type="button"]::-moz-focus-inner,
+ [type="reset"]::-moz-focus-inner,
+ [type="submit"]::-moz-focus-inner {
+     border-style: none;
+     padding: 0;
+ }
 
-.carousel-item.active {
-    position: relative;
-}
+ button:-moz-focusring,
+ [type="button"]:-moz-focusring,
+ [type="reset"]:-moz-focusring,
+ [type="submit"]:-moz-focusring {
+     outline: 1px dotted ButtonText;
+ }
 
-.carousel-item img {
-    width: 100%;
-    object-fit: cover;
-    height: 100vh;
-}
+ fieldset {
+     padding: 0.35em 0.75em 0.625em;
+ }
 
-.carousel-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
+ legend {
+     box-sizing: border-box;
+     color: inherit;
+     display: table;
+     max-width: 100%;
+     padding: 0;
+     white-space: normal;
+ }
 
-.carousel-content {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    z-index: 5;
-    color: white;
-}
+ progress {
+     vertical-align: baseline;
+ }
 
-.carousel-control-prev,
-.carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    user-select: none;
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 4;
-}
+ textarea {
+     overflow: auto;
+ }
 
-.carousel-control-prev {
-    left: 30px;
-}
+ [type="checkbox"],
+ [type="radio"] {
+     box-sizing: border-box;
+     padding: 0;
+ }
 
-.carousel-control-next {
-    right: 30px;
-}
+ [type="number"]::-webkit-inner-spin-button,
+ [type="number"]::-webkit-outer-spin-button {
+     height: auto;
+ }
 
-.carousel-inner::-webkit-scrollbar {
-    display: none;
-}
+ [type="search"] {
+     --webkit-appearance: textfield;
+     outline-offset: -2px;
+ }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
+ [type="search"]::-webkit-search-decoration {
+     -webkit-appearance: none;
+ }
 
-@media screen and (max-width:1055px) {
-    header {
-        width: 100%;
-    }
+ ::-webkit-file-upload-button {
+     -webkit-appearance: button;
+     font: inherit;
+ }
 
-    .header-container {
-        padding: 0 2rem;
-    }
-}
+ details {
+     display: block;
+ }
 
-@media screen and (max-width:768px) {
+ summary {
+     display: list-item;
+ }
 
-    nav {
-        width: auto;
-    }
+ template {
+     display: none;
+ }
 
-    nav ul {
-        display: none;
-    }
+ [hidden] {
+     display: none;
+ }
 
-    header {
-        padding: 2rem 0 1.5rem 0;
-    }
+ @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-    .menu-icon {
-        display: flex;
-    }
-}
+ @font-face {
+     font-family: 'Termina Test Regular';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Termina Test Regular'), url('pages/TerminaTest-Regular.woff') format('woff');
+ }
+
+ @font-face {
+     font-family: 'Termina Test Light';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Termina Test Light'), url('pages/TerminaTest-Light.woff') format('woff');
+ }
+
+ @font-face {
+     font-family: 'Termina Test Medium';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Termina Test Medium'), url('pages/TerminaTest-Medium.woff') format('woff');
+ }
+
+ @font-face {
+     font-family: 'Termina Test Bold';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Termina Test Bold'), url('pages/TerminaTest-Bold.woff') format('woff');
+ }
+
+ @font-face {
+     font-family: 'Termina Test Black';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Termina Test Black'), url('pages/TerminaTest-Black.woff') format('woff');
+ }
+
+ /***********************************************************************************************************************************/
+
+ .termina-test-regular {
+     font-family: 'Termina Test Regular';
+ }
+
+ .termina-test-light {
+     font-family: 'Termina Test Light';
+ }
+
+ .termina-test-medium {
+     font-family: 'Termina Test Medium';
+ }
+
+ .termina-test-bold {
+     font-family: 'Termina Test Bold';
+ }
+
+ .termina-test-black {
+     font-family: 'Termina Test Black';
+ }
+
+ /***********************************************************************************************************************************/
+
+ .urbanist-light {
+     font-family: "Urbanist", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 300;
+     font-style: normal;
+ }
+
+ .urbanist-regular {
+     font-family: "Urbanist", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ .urbanist-medium {
+     font-family: "Urbanist", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     font-style: normal;
+ }
+
+ .urbanist-semi-bold {
+     font-family: "Urbanist", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+ }
+
+ .urbanist-bold {
+     font-family: "Urbanist", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 700;
+     font-style: normal;
+ }
+
+ .urbanist-extra-bold {
+     font-family: "Urbanist", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 800;
+     font-style: normal;
+ }
+
+ /***********************************************************************************************************************************/
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ ::-webkit-scrollbar {
+     width: 0px;
+ }
+
+ .main-body {
+     width: 100%;
+     height: 100%;
+ }
+
+ .header-container {
+     width: 100%;
+     padding: 0 9rem;
+     position: absolute;
+     z-index: 10;
+     background: transparent;
+ }
+
+ header {
+     width: 47.625rem;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 0.5rem;
+     padding: 4rem 0rem 1.5rem 0rem;
+ }
+
+ header img {
+     display: flex;
+     align-items: center;
+     height: 100%;
+ }
+
+ hgroup {
+     display: flex;
+     align-items: center;
+     cursor: default;
+     gap: 0.25rem;
+     width: 12.831rem;
+ }
+
+ .hgroup-content h1,
+ .hgroup-content span {
+     color: #ffffff;
+     margin: 0;
+ }
+
+ nav {
+     width: 31rem;
+ }
+
+ nav ul {
+     display: flex;
+     align-items: center;
+     list-style: none;
+     justify-content: space-between;
+     gap: 0.5rem;
+     padding: 0.5rem;
+ }
+
+ nav ul li {
+     color: #ffffff;
+     line-height: 21.6px;
+     font-size: 1.125rem;
+     font-family: "Urbanist", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     cursor: pointer;
+     padding: 0.5rem;
+ }
+
+ .menu-icon {
+     display: none;
+     align-items: center;
+     justify-content: flex-end;
+     cursor: pointer;
+ }
+
+ .menu-icon img {
+     width: 2rem;
+ }
+
+ .carousel {
+     height: 100vh;
+     align-items: center;
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 100%;
+     overflow: hidden;
+     display: flex;
+ }
+
+ .carousel button {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     z-index: 20;
+ }
+
+ .carousel-item {
+     width: 100%;
+     display: flex;
+     position: relative;
+ }
+
+ .carousel-item img {
+     width: 100%;
+     object-fit: cover;
+     height: 100vh;
+ }
+
+ .carousel-item::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100vh;
+     background: rgba(0, 0, 0, 0.5);
+     z-index: 1;
+ }
+
+ .carousel-content {
+     /* width: 100%; */
+     width: 102.688rem;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 0.5rem;
+     position: absolute;
+     bottom: 25%;
+     /* left: 150px; */
+     padding: 0 9rem;
+     z-index: 5;
+     color: white;
+ }
+
+ .carousel-content h1 {
+     font-family: 'Termina Test Bold' !important;
+     font-size: 7.25rem;
+     font-weight: 700;
+     line-height: 8.938rem;
+     letter-spacing: 0.01em;
+     text-align: left;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+
+ .carousel-content p {
+     width: 30rem;
+     height: 6.063rem;
+     font-family: "Urbanist", sans-serif;
+     font-size: 1.5rem;
+     font-weight: 400;
+     line-height: 2.07rem;
+     text-align: left;
+ }
+
+ .carousel .slick-prev,
+ .carousel .slick-next {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     font-size: 25px;
+     font-weight: 900;
+     color: white;
+     background: #D9D9D973;
+     text-decoration: none;
+     padding: 10px;
+     border-style: none;
+     border-radius: 50%;
+     cursor: pointer;
+     user-select: none;
+     width: 3.375rem;
+     height: 3.375rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: 4;
+ }
+
+ .carousel .slick-prev {
+     left: 30px;
+ }
+
+ .carousel .slick-next {
+     right: 30px;
+ }
+
+ .carousel-control-prev:hover,
+ .carousel-control-next:hover {
+     background-color: rgba(0, 0, 0, 0.7);
+ }
+
+ @media screen and (max-width:1643px) {
+     .carousel-content {
+         width: 100%;
+     }
+ }
+
+ @media screen and (max-width:1340px) {
+     .carousel-content h1 {
+         font-size: 5rem;
+         line-height: 6rem;
+     }
+ }
+
+ @media screen and (max-width:1055px) {
+     header {
+         width: 100%;
+     }
+
+     .header-container {
+         padding: 0 2rem;
+     }
+
+     .carousel-content {
+         padding: 0 2rem;
+         align-items: center;
+     }
+
+     .carousel-content h1 {
+         text-align: center;
+     }
+
+     .carousel-content p {
+         text-align: center;
+     }
+ }
+
+ @media screen and (max-width:936px) {
+
+     .carousel-content {
+         bottom: 30%;
+         gap: 4rem;
+         /* padding: 0 6rem; */
+     }
+
+     .carousel-content p {
+         width: 100%;
+     }
+
+     .carousel-content h1 {
+         font-size: 3rem;
+         line-height: 3rem;
+     }
+ }
+
+ @media screen and (max-width:768px) {
+
+     nav {
+         width: auto;
+     }
+
+     nav ul {
+         display: none;
+     }
+
+     header {
+         padding: 2rem 0 1.5rem 0;
+     }
+
+     .menu-icon {
+         display: flex;
+     }
+
+     .carousel-content p {
+         font-size: 1rem;
+     }
+
+     .carousel-content h1 {
+         font-size: 2rem;
+
+     }
+ }
