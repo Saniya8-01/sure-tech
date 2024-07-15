@@ -11,17 +11,19 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        // prevArrow: $('.slick-prev'),
+        // nextArrow: $('.slick-next'),
     });
     // carousel ends //
 
     let acc = $(".faq-qn-open-close");
 
-    function changeButtonText(buttonClass, newText) {
-        $(buttonClass).html(newText);
+    function changeButtonContent(buttonClass, imagePath) {
+        $(buttonClass).html('<img src="' + imagePath + '" alt="icon">');
     }
 
-    changeButtonText('.slick-prev', '&larr;');
-    changeButtonText('.slick-next', '&rarr;');
+    changeButtonContent('.slick-prev', '../../assets/icons/left-icon.svg');
+    changeButtonContent('.slick-next', '../../assets/icons/right-icon.svg');
 
     acc.first().next().css("display", "flex").prev().find(".open-close-icon").html("-");
 
@@ -49,11 +51,11 @@ $(document).ready(function () {
                 </div>
                 <div class="card-body">
                     <div class="card-name">
-                        <p class="name-div">${item.name}</p>
+                        <h3 class="name-div">${item.name}</h3>
                         <p class="name-details">${item.position}</p>
                     </div>
-                    <div class="linkedin-img">
-                        <img src="assets/icons/LinkedinLogo.png" alt="img">
+                    <div class="linkedin-img">       
+                       <a href="#"><img src="assets/icons/LinkedinLogo.png" alt="img"></a>
                     </div>
                 </div>
             </div>`).join('');
