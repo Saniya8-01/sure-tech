@@ -11,12 +11,20 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        // prevArrow: $('.slick-prev'),
-        // nextArrow: $('.slick-next'),
     });
     // carousel ends //
 
     let acc = $(".faq-qn-open-close");
+
+    $("#open-sidebar").click(function () {
+        $(".sidebar").css("display", "flex")
+    })
+
+    $(document).click(function(event) {
+        if (!$(event.target).closest('.sidebar, #open-sidebar').length) {
+            $(".sidebar").css("display", "none");
+        }
+    });
 
     function changeButtonContent(buttonClass, imagePath) {
         $(buttonClass).html('<img src="' + imagePath + '" alt="icon">');
