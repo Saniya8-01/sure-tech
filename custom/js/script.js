@@ -17,14 +17,22 @@ $(document).ready(function () {
     let acc = $(".faq-qn-open-close");
 
     $("#open-sidebar").click(function () {
-        $(".sidebar").css("display", "flex")
-    })
+        if ($(".sidebar").css("display") === "none") {
+            $(".sidebar").css("display", "flex");
+        } else {
+            $(".sidebar").css("display", "none");
+        }       
+    })    
 
-    $(document).click(function(event) {
+    $(document).click(function (event) {
         if (!$(event.target).closest('.sidebar, #open-sidebar').length) {
             $(".sidebar").css("display", "none");
         }
     });
+
+    $(".sidebar-close").click(function () {
+        $(".sidebar").css("display", "none");
+    })
 
     function changeButtonContent(buttonClass, imagePath) {
         $(buttonClass).html('<img src="' + imagePath + '" alt="icon">');

@@ -739,6 +739,7 @@
      border-radius: 100%;
      width: 3.4rem;
      height: 3.4rem;
+     padding: 1rem;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -1150,7 +1151,8 @@
  .sidebar {
      display: none;
      flex-direction: column;
-     justify-content: space-between;
+     gap: 2rem;
+     /* justify-content: space-between; */
      width: 50%;
      min-height: 100vh;
      background: rgb(57 61 70 / 94%);
@@ -1170,6 +1172,27 @@
      align-items: flex-start;
      justify-content: flex-start;
      gap: 1.5rem;
+ }
+
+ .sidebar-list li {
+     font-family: "Urbanist", sans-serif;
+     font-size: 1.2rem;
+     font-weight: 600;
+     padding-top: 1rem 0;
+     width: 100%;
+     text-align: left;
+ }
+
+ .sidebar-close-div {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ .sidebar-close {
+     cursor: pointer;
+     width: 30px;
+     height: 30px;
+     filter: invert(100%) brightness(100%);
  }
 
  @media screen and (max-width:1880px) {
@@ -1439,6 +1462,16 @@
          top: 70%;
      }
 
+     .carousel-item img {
+         object-fit: cover;
+     }
+
+ }
+
+ @media screen and (max-width:640px) {
+     .f-form-em-mob {
+         flex-direction: column;
+     }
  }
 
  @media screen and (max-width:510px) {
@@ -1447,9 +1480,9 @@
          line-height: 1.9rem;
      }
 
-     .open-close-icon {
+     /* .open-close-icon {
          display: none;
-     }
+     } */
  }
 
  @media screen and (max-width:465px) {
@@ -1473,9 +1506,5 @@
 
      .footer-div-four img {
          width: 1.5rem;
-     }
-
-     .f-form-em-mob {
-         flex-direction: column;
      }
  }
