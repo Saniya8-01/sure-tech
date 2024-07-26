@@ -267,24 +267,6 @@
      width: 12.831rem;
  }
 
- .hgroup-content {
-     width: 10.19rem;
- }
-
- .hgroup-content h1,
- .hgroup-content span {
-     width: 100% !important;
-     color: #ffffff;
-     margin: 0;
-     display: flex;
-     letter-spacing: 0.5px;
- }
-
- .hgroup-content h1 {
-     letter-spacing: 2px;
-     width: 10.19rem;
- }
-
  nav {
      width: 31rem;
  }
