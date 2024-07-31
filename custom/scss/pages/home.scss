@@ -1,0 +1,278 @@
+.main-body { width: 100%; height: 100%; }
+
+// Carousel style
+.carousel { width: 100%; height: 100vh; align-items: center; position: relative; top: 0; left: 0; overflow: hidden; display: flex; 
+
+    button { position: absolute; top: 50%; transform: translateY(-50%); z-index: 20; }
+
+    .slick-prev { position: absolute; top: 50%; transform: translateY(-50%); font-size: 25px; font-weight: 900; background: none; padding: 10px; border-style: none; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: center; z-index: 4; left: 30px; }
+
+    .slick-next { position: absolute; top: 50%; transform: translateY(-50%); font-size: 25px; font-weight: 900; background: none; padding: 10px; border-style: none; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: center; z-index: 4; right: 30px; }
+
+    .carousel-item { width: 100%; display: flex; position: relative; 
+
+        img { width: 100%; height: 100vh; }
+    
+        &::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.5); z-index: 1; }
+    
+        .carousel-content { width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 1.625rem; position: absolute; top: 18.313rem; padding: 0 7.5rem; z-index: 5; color: white; 
+    
+            h1 { margin: 0; width: 102.688rem; color: #ffffff; font-family: 'Termina Test Bold' !important; font-size: 7.25rem; font-style: normal; font-weight: 700; line-height: 143px; letter-spacing: 1.16px; }
+        
+            p { text-align: left; display: flex; width: 30.5rem; height: 6.063rem; flex-direction: column; justify-content: center; flex-shrink: 0; color: #ffffff; font-family: "Urbanist", sans-serif; font-size: 1.5rem; font-style: normal; font-weight: 600; line-height: 138.004%; text-transform: capitalize; }
+        
+        }
+    }
+
+    .carousel-control-prev:hover, .carousel-control-next:hover { background-color: rgba(0, 0, 0, 0.7); }
+}
+
+// Main
+.main-container { padding: 7.5rem 7.5rem; 
+
+    main { display: flex; flex-direction: column; align-items: flex-start; gap: 2rem; 
+    
+        .m-part-div { display: flex; gap: 3rem; flex-direction: column; width: 100%; 
+    
+            .main-title { width: 100%; display: flex; align-items: center; gap: 0.9rem; 
+    
+                .ellipse { width: 0.618rem; height: 0.618rem; border-radius: 100%; background: #DD8607; }
+            
+                h1 { font-family: 'Termina Test Bold' !important; font-size: 1.5rem; font-weight: 700; line-height: 2.083rem; text-align: left; color: #171717; width: 14.625rem; height: 2.125rem; margin: 0; }
+            }
+
+            .team-btns { display: flex; width: 100%; gap: 1.25rem; align-items: center; overflow-x: scroll !important; 
+
+                button { width: 9rem; height: 3.5rem; display: flex; align-items: center; justify-content: center; border-style: none; border-radius: 12px; border: 1px solid #515151; background: transparent; font-family: "Urbanist", sans-serif; font-size: 1.25rem; font-weight: 600; line-height: 1.5rem; text-align: center; color: #515151; cursor: pointer; padding: 1rem 2rem; gap: 0.625rem; }
+            
+                button:hover { background: #FFCD00; color: #171717; }
+
+                .btnTeam.activeBtn { background: #FFCD00; color: #171717; }
+            }    
+        }
+
+        .card { width: 100%; display: flex; flex-direction: column; gap: 1.3rem; 
+        
+            .card-title { padding: 1rem 0rem 0rem 0rem; font-family: 'Termina Test Bold' !important; font-size: 1.5rem; font-weight: 700; line-height: 2.083rem; letter-spacing: 0.02em; text-align: left; margin: 0; color: #171717; }
+
+            .card-container { display: grid; grid-template-columns: repeat(2, 1fr); width: 100%; grid-gap: 3.37rem; 
+            
+                .card-div { width: 100%; display: flex; flex-direction: column; gap: 1.5rem; align-items: flex-start; justify-content: space-between; overflow: hidden; 
+                
+                    .card-img { width: 100%; height: 100%; border-radius: 25px; 
+        
+                        img { border-radius: 25px; width: 100%; height: 100%; }
+                        
+                    }
+
+                    .card-body { display: flex; align-items: center; gap: 1rem; width: 100%; justify-content: space-between; 
+                    
+                        .linkedin-img { display: flex; align-items: center; justify-content: center; 
+
+                            a { display: flex; align-items: center; 
+                            
+                                img { transition: all 0.2s ease-in; }
+                
+                                img:hover { transform: scale(1.05); }
+                            }                     
+          
+                        }
+
+                        .card-name { display: flex; flex-direction: column; align-items: flex-start; gap: 0.4rem; 
+                        
+                            .name-div { font-family: "Urbanist", sans-serif; font-size: 1.5rem; font-weight: 700; line-height: 1.8rem; text-align: left; color: #171717; }
+                
+                            .name-details { font-family: "Urbanist", sans-serif; font-size: 1.25rem; font-weight: 500; line-height: 1.875rem; text-align: left; color: #515151; }
+                        }
+                    }
+            
+                }
+            }
+
+        }  
+    }
+}
+
+// Section
+.section-container { padding: 2rem 7.5rem;
+    section {
+
+        .main-title { width: 100%; display: flex; align-items: center; gap: 0.9rem; 
+    
+            .ellipse { width: 0.618rem; height: 0.618rem; border-radius: 100%; background: #DD8607; }
+        
+            h1 { font-family: 'Termina Test Bold' !important; font-size: 1.5rem; font-weight: 700; line-height: 2.083rem; text-align: left; color: #171717; width: 14.625rem; height: 2.125rem; margin: 0; }
+        }         
+
+        .faq-section { padding: 1.5rem 0; 
+        
+            .faq-qn { padding: 1rem 0; border-bottom: 1px solid #DCDCDC; 
+        
+                .faq-qn-open-close { cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; width: 100%; transition: 0.5s; 
+            
+                    h3 { padding: 1rem 0; font-family: "Urbanist", sans-serif; font-size: 1.6rem; font-weight: 600; line-height: 2.25rem; text-align: left; color: #000000; }
+        
+                    img { cursor: pointer; transition: transform 0.3s ease-in-out; }
+                
+                    img:hover { transform: scale(1.08); }
+        
+                    .open-close-icon { border: 1px solid #000000; border-radius: 100%; width: 3.4rem; height: 3.4rem; padding: 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; }
+        
+                }
+    
+                .panel { display: none; background-color: white; overflow: hidden; }
+    
+                p { font-family: "Urbanist", sans-serif; font-size: 1.2rem; font-weight: 400; line-height: 2.1rem; text-align: left; color: #3C3C43; padding: 0.5rem 0; }
+    
+            }
+        }      
+       
+    }
+}
+
+// Information Container
+.information-container { padding: 7.5rem 7.5rem; 
+
+    .info-section { display: flex; flex-direction: column; gap: 4rem; align-items: flex-start; width: 100%; 
+    
+        .info-filter-btns { display: flex; width: 50.813rem; gap: 1.9rem; align-items: center; overflow-x: scroll; 
+
+            button { text-align: center; padding: 0.5rem 2rem; height: 3.5rem; display: flex; flex-wrap: nowrap; align-items: center; justify-content: center; border-style: none; border-radius: 67px; border: 1px solid #515151; background: transparent; font-family: "Urbanist", sans-serif; font-size: 1.25rem; font-weight: 600; line-height: 1.5rem; color: #515151; cursor: pointer; }
+        
+            button:hover { background: #FFCD00; color: #171717; }
+        
+            .btnFilter.activeBtn { background: #FFCD00; color: #171717; }
+        
+        }                 
+        
+        .info-filter-grid { width: 100%; overflow: hidden; display: grid; height: 100%; grid-template-columns: repeat(3, 1fr); grid-gap: 2rem; 
+        
+            .info-div-card { position: relative; width: 100%; height: 100%; 
+        
+                img { border-radius: 24px; width: 100%; height: 429px; display: flex; object-fit: cover; align-items: center; justify-content: center; }
+            
+                .info-div-card-content { position: absolute; top: 0px; padding: 1.5rem; display: flex; flex-wrap: wrap; 
+            
+                    h3 { font-family: "Urbanist", sans-serif; font-size: 1.75rem; font-weight: 700; line-height: 2.1rem; text-align: left; color: #ffffff; }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1880px) {
+
+    .carousel {
+        .carousel-item {
+            .carousel-content { 
+                h1 { width: 100%; font-size: 5.25rem; line-height: 123px; }
+            }
+         }
+    }
+}
+  
+@media screen and (max-width:1643px) {
+    .carousel {
+        .carousel-item {
+            .carousel-content { width: 100%; }
+        }
+    }
+}
+
+@media screen and (max-width:1340px) {
+    .carousel {
+        .carousel-item {
+            .carousel-content { 
+                h1 { font-size: 5rem; line-height: 6rem; }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1055px) {
+    
+    .carousel {
+        .carousel-item {
+            .carousel-content { padding: 0 2rem; align-items: flex-start; 
+            
+                h1 { text-align: left; }
+
+                p { text-align: left; display: flex; width: 30.5rem; height: 6.063rem; flex-direction: column; justify-content: center; flex-shrink: 0; color: #ffffff; font-family: "Urbanist", sans-serif; font-size: 1.5rem; font-style: normal; font-weight: 600; line-height: 138.004%; text-transform: capitalize; }
+            }
+        }
+
+        .slick-prev { top: 90%; }
+        .slick-next { top: 90%; }
+
+    }
+
+    .team-btns { overflow-x: auto; }
+    .main-container { padding: 3rem 2rem; }
+    .section-container { padding: 3rem 2rem; }
+    .information-container { padding: 3rem 2rem; }    
+    .info-filter-btns { gap: 1.5rem; display: inline-flex; text-wrap: nowrap; width: 100%; }
+    .info-filter-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width:936px) {
+    .carousel {
+        .carousel-item {
+            .carousel-content { gap: 3rem;
+                p { width: 100%; }
+
+                h1 { font-size: 3rem; line-height: 3rem; }
+            }
+        }
+    }
+
+    .card-container { grid-template-columns: repeat(1, 1fr); }
+    .open-close-icon { width: 2rem; height: 2rem; font-size: 1rem; }
+}
+
+@media screen and (max-width:510px) {
+    .carousel-content {
+        h1 { font-size: 1.5rem; line-height: 1.9rem; }
+    }
+}
+
+@media screen and (max-width:465px) {
+    .card-img { height: 351px; }
+
+    .card-div { height: 460px; }
+}
+
+@media screen and (max-width:768px) {    
+  
+    
+    .carousel {
+        .carousel-item {
+            .carousel-content {
+                p { font-size: 1rem; }
+                h1 { font-size: 2rem; }
+            }
+        }
+    }
+
+    .carousel .slick-prev, .carousel .slick-next { top: 70%; }
+    .carousel-item img { object-fit: cover; }
+
+    .info-filter-grid { grid-template-columns: repeat(1, 1fr); }    
+    
+    .info-filter-btns button { text-align: center; height: 100%; padding: 0.5rem 2rem; font-size: 1rem; line-height: normal; }
+    .info-section { gap: 1.2rem; }
+    .info-div-card-content h3 { font-size: 1.3rem; }
+   
+   
+   
+    .faq-qn h3 { font-size: 1rem; }
+    .main-title h1 { font-size: 1.3rem; }
+    .team-btns button { width: 100%; height: 100%; padding: 1rem 1rem; line-height: normal; font-size: 1rem; }
+    .m-part-div { gap: 1.3rem; }
+    .card .card-title { font-size: 1.3rem; }
+    .name-div { font-size: 1.2rem; }
+    .name-details { font-size: 1rem; }
+    .linkedin-img img { width: 3rem; }
+    .faq-qn { padding: 0; }
+}

@@ -1,0 +1,160 @@
+
+// Footer
+.footer-container { padding: 7.5rem 7.5rem; 
+
+    footer { width: 100%; height: 100%; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 1.25rem; 
+    
+        .footer-div-one { border-style: none; padding: 2rem; background: #F6F6F6; width: 100%; border-radius: 24px; height: 100%; overflow: hidden; display: flex; flex-direction: column; align-items: flex-start; width: 100%; justify-content: space-between; gap: 1.2rem; 
+        
+            .footer-div-contact { display: flex; flex-direction: column; align-items: flex-start; width: 100%; gap: 1rem; 
+       
+                .contact-details { display: flex; align-items: center; gap: 1rem; width: 100%; 
+                
+                    img { width: 1.5rem; display: flex; align-items: center; }
+
+                    p { font-family: "Urbanist", sans-serif; font-size: 1.125rem; font-weight: 600; line-height: 1.5rem; text-align: left; color: #171717; display: flex; align-items: center; }
+                
+                    a { position: relative; text-decoration: none; color: #171717; }
+
+                    a::after { content: ''; position: absolute; left: 0; bottom: -0.3rem; width: 100%; height: 2px; background-color: #FFCD00; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease-in-out; }
+               
+                    a:hover::after { transform: scaleX(1); }
+                    a:hover { color: #FFCD00; }
+               
+                }                 
+              
+            }
+
+            .footer-div-prod-services { display: flex; align-items: flex-start; flex-direction: row; gap: 2.5rem; width: 100%; 
+               
+                .footer-div-prod a, .footer-div-services a { position: relative; text-decoration: none; color: #171717; }
+
+                .footer-div-prod a::after, .footer-div-services a::after { content: ''; position: absolute; left: 0; bottom: -0.3rem; width: 100%; height: 2px; background-color: #FFCD00; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease-in-out; }
+
+                .footer-div-prod a:hover::after, .footer-div-services a:hover::after { transform: scaleX(1); }
+            }
+
+
+        }
+
+        .footer-div-two { border-style: none; padding: 2rem; background: #F6F6F6; width: 100%; border-radius: 24px;}
+
+        .footer-div-last { display: flex; flex-direction: column; justify-content: space-between; width: 100%; align-items: flex-start; gap: 1.5rem; height: 100%; }
+    } 
+
+}
+
+.footer-div-three { border-style: none; padding: 2rem; background: #F6F6F6; width: 100%; border-radius: 24px; }
+
+.footer-div-two { height: 100%; overflow: hidden; }
+
+.footer-div-two { display: flex; flex-direction: column; align-items: flex-start; width: 100%; justify-content: space-between; gap: 1.75rem; }
+
+.footer-div-three { height: 100%; display: flex; align-items: flex-start; flex-direction: row; gap: 2.5rem; width: 100%; }
+
+.footer-div-four { display: flex; padding: 3rem 3rem; width: 100%; justify-content: space-evenly; gap: 4rem; align-items: center; border-style: none; background: #F6F6F6; border-radius: 24px; }
+
+.footer-div-four img { display: flex; align-items: center; justify-content: center; width: 2.5rem; }
+
+
+
+
+.contact-details { display: flex; align-items: center; gap: 1rem; width: 100%; }
+
+.contact-details img, .contact-details p { display: flex; align-items: center; }
+
+.contact-details img { width: 1.5rem; }
+
+.contact-details p { font-family: "Urbanist", sans-serif; font-size: 1.125rem; font-weight: 600; line-height: 1.5rem; text-align: left; color: #171717; }
+
+
+.footer-div-prod h1, .footer-div-services h1 { margin: 0; font-family: 'Termina Test Bold' !important; font-size: 1.5rem; font-weight: 700; line-height: 1.5rem; text-align: left; color: #171717; padding: 1rem 0; }
+
+.footer-div-prod ul, .footer-div-services ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+
+.footer-div-prod ul li, .footer-div-services ul li { font-family: "Urbanist", sans-serif; font-size: 1rem; font-weight: 600; line-height: 2.5rem; text-align: left; color: #515151; }
+
+.footer-suretech { display: flex; align-items: center; gap: 0.3rem; }
+
+.footer-suretech img { display: flex; align-items: center; }
+
+.footer-suretech p { font-family: "Urbanist", sans-serif; font-size: 1rem; font-weight: 600; line-height: 1.4rem; text-align: left; color: #4E4E4E; }
+
+.f-req-title { display: flex; width: 100%; align-items: center; justify-content: center; }
+
+.f-req-title h1 { margin: 0; font-family: 'Termina Test Bold' !important; font-size: 1.5rem; font-weight: 700; line-height: 1.5rem; letter-spacing: 0.02em; text-align: center; color: #171717; }
+
+.f-form { width: 100%; height: 100%; }
+
+.f-form form { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; width: 100%; height: 100%; gap: 1.2rem; }
+
+.form-name { display: flex; align-items: flex-start; flex-direction: column; width: 100%; gap: 0.7rem; }
+
+.f-form-em-mob { display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100%; gap: 1rem; }
+
+.form-email { display: flex; align-items: flex-start; flex-direction: column; width: 100%; gap: 0.7rem; }
+
+.form-mobile { display: flex; align-items: flex-start; flex-direction: column; width: 100%; gap: 0.7rem; }
+
+.form-requirement { display: flex; align-items: flex-start; flex-direction: column; width: 100%; gap: 0.7rem; }
+
+.f-form-btn { display: flex; align-items: center; width: 100%; gap: 0.7rem; }
+
+.f-form-btn button { background: transparent; border-style: none; border: 1.5px solid #171717; width: 100%; display: flex; align-items: center; justify-content: center; padding: 1rem 2rem; border-radius: 6.25rem; color: #171717; font-family: "Urbanist", sans-serif; font-size: 1.063rem; font-style: normal; font-weight: 600; line-height: normal; cursor: pointer; transition: background 0.3s ease-in-out; }
+
+.f-form-btn button:hover { background: #FFCD00; }
+
+.form-name label, .form-email label, .form-mobile label, .form-requirement label { color: #171717; font-family: "Urbanist", sans-serif; font-size: 1rem; font-style: normal; font-weight: 600; line-height: normal; text-transform: capitalize; }
+
+.form-name input, .form-email input, .form-mobile input, .form-requirement textarea { width: 100%; padding: 1.25rem; background: transparent; border-radius: 1rem; border: 0.5px solid #767676; }
+
+.form-requirement textarea { resize: none; }
+
+.comp-icon { color: #F00; font-family: "Urbanist", sans-serif; font-size: 16px; font-style: normal; font-weight: 600; line-height: normal; }
+
+.contact-details a, .footer-div-prod a, .footer-div-services a { position: relative; text-decoration: none; color: #171717; }
+
+.contact-details a::after, .footer-div-prod a::after, .footer-div-services a::after { content: ''; position: absolute; left: 0; bottom: -0.3rem; width: 100%; height: 2px; background-color: #FFCD00; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease-in-out; }
+
+.contact-details a:hover::after, .footer-div-prod a:hover::after, .footer-div-services a:hover::after { transform: scaleX(1); }
+
+.contact-details a:hover { color: #FFCD00; }
+
+@media screen and (max-width:1476px) {
+    footer {
+        .footer-div-one, .footer-div-two, .footer-div-last { height: 100%; }
+    }
+}
+  
+@media screen and (max-width:1424px) {
+    footer { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width:1055px) {
+    .footer-container { padding: 3rem 2rem; }
+}
+
+@media screen and (max-width:936px) {
+    footer { grid-template-columns: repeat(1, 1fr); }
+}
+
+@media screen and (max-width:640px) {
+    .f-form-em-mob { flex-direction: column; }
+}
+
+@media screen and (max-width:465px) {
+    .footer-div-prod-services { flex-direction: column; gap: 1.2rem; }
+
+    .footer-div-three { flex-direction: column; gap: 1.2rem; }
+
+    .footer-div-four {
+        img { width: 1.5rem; }
+    }
+}
+
+@media screen and (max-width:768px) { 
+    .footer-div-four { padding: 1.5rem 1.5rem; gap: 1rem; }
+    .footer-div-prod h1, .footer-div-services h1 { font-size: 1.2rem; }
+    .contact-details a, .footer-div-prod a, .footer-div-services a { font-size: 1rem; }
+    .f-req-title h1 { font-size: 1.2rem; line-height: 2rem; }
+}

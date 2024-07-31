@@ -1,0 +1,138 @@
+.header-container {
+  width: 100%;
+  padding: 0 7.5rem;
+  position: absolute;
+  z-index: 10;
+  background: transparent;
+}
+.header-container header {
+  width: 47.625rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.793rem;
+  padding: 3.7rem 0rem 3.7rem 0rem;
+}
+.header-container header img {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header-container header hgroup {
+  display: flex;
+  align-items: center;
+  cursor: default;
+  gap: 0.25rem;
+  width: 12.831rem;
+}
+.header-container header nav {
+  width: 31rem;
+}
+.header-container header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.header-container header nav ul li {
+  color: #F2F2F2;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.header-container header nav .menu-icon {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.header-container header nav .menu-icon img {
+  width: 2rem;
+}
+.header-container header nav .sidebar {
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  min-height: 100vh;
+  background: rgba(57, 61, 70, 0.94);
+  padding: 1.5rem;
+  box-shadow: 6px 0px 2px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 300ms ease-in;
+}
+.header-container header nav .sidebar .sidebar-close-div {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-container header nav .sidebar .sidebar-close-div .sidebar-close {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) brightness(100%);
+}
+.header-container header nav .sidebar .sidebar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+.header-container header nav .sidebar .sidebar-list li {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 1rem 0;
+  width: 100%;
+  text-align: left;
+}
+
+@media screen and (max-width: 1055px) {
+  .header-container {
+    padding: 0 2rem;
+  }
+  .header-container header {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-container header {
+    gap: 2.6rem;
+    padding: 2rem 0 1.5rem 0;
+  }
+  .header-container header nav {
+    width: auto;
+  }
+  .header-container header nav ul {
+    display: none;
+  }
+  .header-container header nav .menu-icon {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-container header {
+    gap: 2.6rem;
+    padding: 2rem 0 1.5rem 0;
+  }
+  .header-container header nav {
+    width: auto;
+  }
+  .header-container header nav ul {
+    display: none;
+  }
+  .header-container header nav .menu-icon {
+    display: flex;
+  }
+}/*# sourceMappingURL=header.css.map */
