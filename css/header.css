@@ -14,17 +14,17 @@
   gap: 3.793rem;
   padding: 3.7rem 0rem 3.7rem 0rem;
 }
-.header-container header img {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
 .header-container header hgroup {
   display: flex;
   align-items: center;
   cursor: default;
   gap: 0.25rem;
   width: 12.831rem;
+}
+.header-container header hgroup img {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .header-container header nav {
   width: 31rem;
@@ -104,21 +104,6 @@
   }
   .header-container header {
     width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header-container header {
-    gap: 2.6rem;
-    padding: 2rem 0 1.5rem 0;
-  }
-  .header-container header nav {
-    width: auto;
-  }
-  .header-container header nav ul {
-    display: none;
-  }
-  .header-container header nav .menu-icon {
-    display: flex;
   }
 }
 @media screen and (max-width: 768px) {

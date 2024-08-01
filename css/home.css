@@ -2,8 +2,7 @@
   width: 100%;
   height: 100%;
 }
-
-.carousel {
+.main-body .carousel {
   width: 100%;
   height: 100vh;
   align-items: center;
@@ -13,13 +12,13 @@
   overflow: hidden;
   display: flex;
 }
-.carousel button {
+.main-body .carousel button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 20;
 }
-.carousel .slick-prev {
+.main-body .carousel .slick-prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -36,7 +35,7 @@
   z-index: 4;
   left: 30px;
 }
-.carousel .slick-next {
+.main-body .carousel .slick-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -53,16 +52,16 @@
   z-index: 4;
   right: 30px;
 }
-.carousel .carousel-item {
+.main-body .carousel .carousel-item {
   width: 100%;
   display: flex;
   position: relative;
 }
-.carousel .carousel-item img {
+.main-body .carousel .carousel-item img {
   width: 100%;
   height: 100vh;
 }
-.carousel .carousel-item::before {
+.main-body .carousel .carousel-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -72,7 +71,7 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.carousel .carousel-item .carousel-content {
+.main-body .carousel .carousel-item .carousel-content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -84,18 +83,18 @@
   z-index: 5;
   color: white;
 }
-.carousel .carousel-item .carousel-content h1 {
+.main-body .carousel .carousel-item .carousel-content h1 {
   margin: 0;
   width: 102.688rem;
   color: #ffffff;
   font-family: "Termina Test Bold" !important;
-  font-size: 7.25rem;
+  font-size: 7rem;
   font-style: normal;
   font-weight: 700;
   line-height: 143px;
   letter-spacing: 1.16px;
 }
-.carousel .carousel-item .carousel-content p {
+.main-body .carousel .carousel-item .carousel-content p {
   text-align: left;
   display: flex;
   width: 30.5rem;
@@ -111,38 +110,37 @@
   line-height: 138.004%;
   text-transform: capitalize;
 }
-.carousel .carousel-control-prev:hover, .carousel .carousel-control-next:hover {
+.main-body .carousel .carousel-control-prev:hover, .main-body .carousel .carousel-control-next:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
-
-.main-container {
+.main-body .main-container {
   padding: 7.5rem 7.5rem;
 }
-.main-container main {
+.main-body .main-container main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
 }
-.main-container main .m-part-div {
+.main-body .main-container main .m-part-div {
   display: flex;
   gap: 3rem;
   flex-direction: column;
   width: 100%;
 }
-.main-container main .m-part-div .main-title {
+.main-body .main-container main .m-part-div .main-title {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 0.9rem;
 }
-.main-container main .m-part-div .main-title .ellipse {
+.main-body .main-container main .m-part-div .main-title .ellipse {
   width: 0.618rem;
   height: 0.618rem;
   border-radius: 100%;
   background: #DD8607;
 }
-.main-container main .m-part-div .main-title h1 {
+.main-body .main-container main .m-part-div .main-title h1 {
   font-family: "Termina Test Bold" !important;
   font-size: 1.5rem;
   font-weight: 700;
@@ -153,14 +151,14 @@
   height: 2.125rem;
   margin: 0;
 }
-.main-container main .m-part-div .team-btns {
+.main-body .main-container main .m-part-div .team-btns {
   display: flex;
   width: 100%;
   gap: 1.25rem;
   align-items: center;
   overflow-x: scroll !important;
 }
-.main-container main .m-part-div .team-btns button {
+.main-body .main-container main .m-part-div .team-btns button {
   width: 9rem;
   height: 3.5rem;
   display: flex;
@@ -180,21 +178,21 @@
   padding: 1rem 2rem;
   gap: 0.625rem;
 }
-.main-container main .m-part-div .team-btns button:hover {
+.main-body .main-container main .m-part-div .team-btns button:hover {
   background: #FFCD00;
   color: #171717;
 }
-.main-container main .m-part-div .team-btns .btnTeam.activeBtn {
+.main-body .main-container main .m-part-div .team-btns .btnTeam.activeBtn {
   background: #FFCD00;
   color: #171717;
 }
-.main-container main .card {
+.main-body .main-container main .card {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
 }
-.main-container main .card .card-title {
+.main-body .main-container main .card .card-title {
   padding: 1rem 0rem 0rem 0rem;
   font-family: "Termina Test Bold" !important;
   font-size: 1.5rem;
@@ -205,13 +203,13 @@
   margin: 0;
   color: #171717;
 }
-.main-container main .card .card-container {
+.main-body .main-container main .card .card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   grid-gap: 3.37rem;
 }
-.main-container main .card .card-container .card-div {
+.main-body .main-container main .card .card-container .card-div {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -220,45 +218,45 @@
   justify-content: space-between;
   overflow: hidden;
 }
-.main-container main .card .card-container .card-div .card-img {
+.main-body .main-container main .card .card-container .card-div .card-img {
   width: 100%;
   height: 100%;
   border-radius: 25px;
 }
-.main-container main .card .card-container .card-div .card-img img {
+.main-body .main-container main .card .card-container .card-div .card-img img {
   border-radius: 25px;
   width: 100%;
   height: 100%;
 }
-.main-container main .card .card-container .card-div .card-body {
+.main-body .main-container main .card .card-container .card-div .card-body {
   display: flex;
   align-items: center;
   gap: 1rem;
   width: 100%;
   justify-content: space-between;
 }
-.main-container main .card .card-container .card-div .card-body .linkedin-img {
+.main-body .main-container main .card .card-container .card-div .card-body .linkedin-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main-container main .card .card-container .card-div .card-body .linkedin-img a {
+.main-body .main-container main .card .card-container .card-div .card-body .linkedin-img a {
   display: flex;
   align-items: center;
 }
-.main-container main .card .card-container .card-div .card-body .linkedin-img a img {
+.main-body .main-container main .card .card-container .card-div .card-body .linkedin-img a img {
   transition: all 0.2s ease-in;
 }
-.main-container main .card .card-container .card-div .card-body .linkedin-img a img:hover {
+.main-body .main-container main .card .card-container .card-div .card-body .linkedin-img a img:hover {
   transform: scale(1.05);
 }
-.main-container main .card .card-container .card-div .card-body .card-name {
+.main-body .main-container main .card .card-container .card-div .card-body .card-name {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.4rem;
 }
-.main-container main .card .card-container .card-div .card-body .card-name .name-div {
+.main-body .main-container main .card .card-container .card-div .card-body .card-name .name-div {
   font-family: "Urbanist", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -266,7 +264,7 @@
   text-align: left;
   color: #171717;
 }
-.main-container main .card .card-container .card-div .card-body .card-name .name-details {
+.main-body .main-container main .card .card-container .card-div .card-body .card-name .name-details {
   font-family: "Urbanist", sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
@@ -274,23 +272,22 @@
   text-align: left;
   color: #515151;
 }
-
-.section-container {
+.main-body .section-container {
   padding: 2rem 7.5rem;
 }
-.section-container section .main-title {
+.main-body .section-container section .main-title {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 0.9rem;
 }
-.section-container section .main-title .ellipse {
+.main-body .section-container section .main-title .ellipse {
   width: 0.618rem;
   height: 0.618rem;
   border-radius: 100%;
   background: #DD8607;
 }
-.section-container section .main-title h1 {
+.main-body .section-container section .main-title h1 {
   font-family: "Termina Test Bold" !important;
   font-size: 1.5rem;
   font-weight: 700;
@@ -301,14 +298,14 @@
   height: 2.125rem;
   margin: 0;
 }
-.section-container section .faq-section {
+.main-body .section-container section .faq-section {
   padding: 1.5rem 0;
 }
-.section-container section .faq-section .faq-qn {
+.main-body .section-container section .faq-section .faq-qn {
   padding: 1rem 0;
   border-bottom: 1px solid #DCDCDC;
 }
-.section-container section .faq-section .faq-qn .faq-qn-open-close {
+.main-body .section-container section .faq-section .faq-qn .faq-qn-open-close {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -317,7 +314,7 @@
   width: 100%;
   transition: 0.5s;
 }
-.section-container section .faq-section .faq-qn .faq-qn-open-close h3 {
+.main-body .section-container section .faq-section .faq-qn .faq-qn-open-close h3 {
   padding: 1rem 0;
   font-family: "Urbanist", sans-serif;
   font-size: 1.6rem;
@@ -326,14 +323,14 @@
   text-align: left;
   color: #000000;
 }
-.section-container section .faq-section .faq-qn .faq-qn-open-close img {
+.main-body .section-container section .faq-section .faq-qn .faq-qn-open-close img {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
-.section-container section .faq-section .faq-qn .faq-qn-open-close img:hover {
+.main-body .section-container section .faq-section .faq-qn .faq-qn-open-close img:hover {
   transform: scale(1.08);
 }
-.section-container section .faq-section .faq-qn .faq-qn-open-close .open-close-icon {
+.main-body .section-container section .faq-section .faq-qn .faq-qn-open-close .open-close-icon {
   border: 1px solid #000000;
   border-radius: 100%;
   width: 3.4rem;
@@ -345,12 +342,12 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
-.section-container section .faq-section .faq-qn .panel {
+.main-body .section-container section .faq-section .faq-qn .panel {
   display: none;
   background-color: white;
   overflow: hidden;
 }
-.section-container section .faq-section .faq-qn p {
+.main-body .section-container section .faq-section .faq-qn p {
   font-family: "Urbanist", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
@@ -359,25 +356,24 @@
   color: #3C3C43;
   padding: 0.5rem 0;
 }
-
-.information-container {
+.main-body .information-container {
   padding: 7.5rem 7.5rem;
 }
-.information-container .info-section {
+.main-body .information-container .info-section {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: flex-start;
   width: 100%;
 }
-.information-container .info-section .info-filter-btns {
+.main-body .information-container .info-section .info-filter-btns {
   display: flex;
   width: 50.813rem;
   gap: 1.9rem;
   align-items: center;
   overflow-x: scroll;
 }
-.information-container .info-section .info-filter-btns button {
+.main-body .information-container .info-section .info-filter-btns button {
   text-align: center;
   padding: 0.5rem 2rem;
   height: 3.5rem;
@@ -396,15 +392,15 @@
   color: #515151;
   cursor: pointer;
 }
-.information-container .info-section .info-filter-btns button:hover {
+.main-body .information-container .info-section .info-filter-btns button:hover {
   background: #FFCD00;
   color: #171717;
 }
-.information-container .info-section .info-filter-btns .btnFilter.activeBtn {
+.main-body .information-container .info-section .info-filter-btns .btnFilter.activeBtn {
   background: #FFCD00;
   color: #171717;
 }
-.information-container .info-section .info-filter-grid {
+.main-body .information-container .info-section .info-filter-grid {
   width: 100%;
   overflow: hidden;
   display: grid;
@@ -412,12 +408,12 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
-.information-container .info-section .info-filter-grid .info-div-card {
+.main-body .information-container .info-section .info-filter-grid .info-div-card {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.information-container .info-section .info-filter-grid .info-div-card img {
+.main-body .information-container .info-section .info-filter-grid .info-div-card img {
   border-radius: 24px;
   width: 100%;
   height: 429px;
@@ -426,14 +422,14 @@
   align-items: center;
   justify-content: center;
 }
-.information-container .info-section .info-filter-grid .info-div-card .info-div-card-content {
+.main-body .information-container .info-section .info-filter-grid .info-div-card .info-div-card-content {
   position: absolute;
   top: 0px;
   padding: 1.5rem;
   display: flex;
   flex-wrap: wrap;
 }
-.information-container .info-section .info-filter-grid .info-div-card .info-div-card-content h3 {
+.main-body .information-container .info-section .info-filter-grid .info-div-card .info-div-card-content h3 {
   font-family: "Urbanist", sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
@@ -490,11 +486,11 @@
   .carousel .slick-next {
     top: 90%;
   }
-  .team-btns {
-    overflow-x: auto;
-  }
   .main-container {
     padding: 3rem 2rem;
+  }
+  .main-container main .m-part-div .team-btns {
+    overflow-x: auto;
   }
   .section-container {
     padding: 3rem 2rem;
@@ -502,13 +498,13 @@
   .information-container {
     padding: 3rem 2rem;
   }
-  .info-filter-btns {
+  .information-container .info-section .info-filter-btns {
     gap: 1.5rem;
     display: inline-flex;
     text-wrap: nowrap;
     width: 100%;
   }
-  .info-filter-grid {
+  .information-container .info-section .info-filter-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -523,10 +519,10 @@
     font-size: 3rem;
     line-height: 3rem;
   }
-  .card-container {
+  .main-container main .card .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .open-close-icon {
+  .section-container .section .faq-section .faq-qn .faq-qn-open-close .open-close-icon {
     width: 2rem;
     height: 2rem;
     font-size: 1rem;
@@ -539,11 +535,11 @@
   }
 }
 @media screen and (max-width: 465px) {
-  .card-img {
-    height: 351px;
-  }
   .card-div {
     height: 460px;
+  }
+  .card-div .card-img {
+    height: 351px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -553,57 +549,63 @@
   .carousel .carousel-item .carousel-content h1 {
     font-size: 2rem;
   }
-  .carousel .slick-prev, .carousel .slick-next {
-    top: 70%;
-  }
-  .carousel-item img {
+  .carousel .carousel-item img {
     object-fit: cover;
   }
-  .info-filter-grid {
+  .carousel .slick-next {
+    top: 70%;
+  }
+  .carousel .slick-prev {
+    top: 70%;
+  }
+  .information-container .info-section {
+    gap: 1.2rem;
+  }
+  .information-container .info-section .info-filter-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .info-filter-btns button {
+  .information-container .info-section .info-filter-grid .info-div-card .info-div-card-content h3 {
+    font-size: 1.3rem;
+  }
+  .information-container .info-section .info-filter-btns button {
     text-align: center;
     height: 100%;
     padding: 0.5rem 2rem;
     font-size: 1rem;
     line-height: normal;
   }
-  .info-section {
-    gap: 1.2rem;
+  .main-container main .m-part-div {
+    gap: 1.3rem;
   }
-  .info-div-card-content h3 {
+  .main-container main .m-part-div .main-title h1 {
     font-size: 1.3rem;
   }
-  .faq-qn h3 {
-    font-size: 1rem;
-  }
-  .main-title h1 {
-    font-size: 1.3rem;
-  }
-  .team-btns button {
+  .main-container main .m-part-div .team-btns button {
     width: 100%;
     height: 100%;
     padding: 1rem 1rem;
     line-height: normal;
     font-size: 1rem;
   }
-  .m-part-div {
-    gap: 1.3rem;
-  }
-  .card .card-title {
+  .main-container main .card .card-title {
     font-size: 1.3rem;
   }
-  .name-div {
+  .main-container main .card .card-container .card-div .card-body .card-name .name-div {
     font-size: 1.2rem;
   }
-  .name-details {
+  .main-container main .card .card-container .card-div .card-body .card-name .name-details {
     font-size: 1rem;
   }
-  .linkedin-img img {
+  .main-container main .card .card-container .card-div .card-body .linkedin-img a img {
     width: 3rem;
   }
-  .faq-qn {
+  .section-container section .main-title h1 {
+    font-size: 1.3rem;
+  }
+  .section-container section .faq-section .faq-qn {
     padding: 0;
+  }
+  .section-container section .faq-section .faq-qn .faq-qn-open-close h3 {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=home.css.map */
