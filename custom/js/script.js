@@ -5,12 +5,12 @@ $(document).ready(function () {
 
     // carousel starts //
     $('.carousel').slick({
-        dots: false,
-        infinite: false,
+        dots: true,
+        infinite: true,
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
     });
     // carousel ends //
 

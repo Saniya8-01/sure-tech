@@ -98,7 +98,7 @@
   text-align: left;
 }
 
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 1024px) {
   .header-container {
     padding: 0 2rem;
   }

@@ -2,11 +2,15 @@
 
     .carousel { width: 100%; height: 100vh; align-items: center; position: relative; top: 0; left: 0; overflow: hidden; display: flex; 
 
-        button { position: absolute; top: 50%; transform: translateY(-50%); z-index: 20; }
+        // button { position: absolute; top: 50%; transform: translateY(-50%); z-index: 20; }
 
-        .slick-prev { position: absolute; top: 50%; transform: translateY(-50%); font-size: 25px; font-weight: 900; background: none; padding: 10px; border-style: none; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: center; z-index: 4; left: 30px; }
+        // .slick-prev { position: absolute; top: 50%; transform: translateY(-50%); font-size: 25px; font-weight: 900; background: none; padding: 10px; border-style: none; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: center; z-index: 4; left: 30px; }
 
-        .slick-next { position: absolute; top: 50%; transform: translateY(-50%); font-size: 25px; font-weight: 900; background: none; padding: 10px; border-style: none; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: center; z-index: 4; right: 30px; }
+        // .slick-next { position: absolute; top: 50%; transform: translateY(-50%); font-size: 25px; font-weight: 900; background: none; padding: 10px; border-style: none; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: center; z-index: 4; right: 30px; }
+
+        .slick-dots {
+            width: 100%; display: flex; align-items: center; justify-content: center; gap: 1rem; position: absolute; bottom: 0; transform: translateY(-50%); z-index: 20; list-style: none;            
+        }
 
         .carousel-item { width: 100%; display: flex; position: relative; 
 
@@ -154,192 +158,188 @@
             }
         }
     }
-}
-
-@media screen and (max-width:1880px) {
-    .carousel {
-        .carousel-item {
-            .carousel-content { 
-                h1 { width: 100%; font-size: 5.25rem; line-height: 123px; }
-            }
-         }
-    }
-}
-  
-@media screen and (max-width:1643px) {
-    .carousel {
-        .carousel-item {
-            .carousel-content { width: 100%; }
+    @media screen and (max-width:1880px) {
+        .carousel {
+            .carousel-item {
+                .carousel-content { 
+                    h1 { width: 100%; font-size: 5.25rem; line-height: 123px; }
+                }
+             }
         }
-    }
-}
-
-@media screen and (max-width:1340px) {
-    .carousel {
-        .carousel-item {
-            .carousel-content { 
-                h1 { font-size: 5rem; line-height: 6rem; }
+    }      
+    @media screen and (max-width:1660px) {
+        .carousel {
+            .carousel-item {
+                .carousel-content { width: 100%; }
             }
         }
-    }
-}
-
-@media screen and (max-width:1055px) {
-    
-    .carousel {
-        .carousel-item {
-            .carousel-content { padding: 0 2rem; align-items: flex-start; 
-            
-                h1 { text-align: left; }
-
-                p { text-align: left; display: flex; width: 30.5rem; height: 6.063rem; flex-direction: column; justify-content: center; flex-shrink: 0; color: #ffffff; font-family: "Urbanist", sans-serif; font-size: 1.5rem; font-style: normal; font-weight: 600; line-height: 138.004%; text-transform: capitalize; }
-            }
-        }
-
-        .slick-prev { top: 90%; }
-        .slick-next { top: 90%; }
-
-    }
-    
-    .main-container { padding: 3rem 2rem; 
-        main {
-            .m-part-div {
-                .team-btns { overflow-x: auto; }
-            }
-        }
-    }
-
-    .section-container { padding: 3rem 2rem; }
-
-    .information-container { padding: 3rem 2rem; 
-        .info-section{
-            .info-filter-btns { gap: 1.5rem; display: inline-flex; text-wrap: nowrap; width: 100%; }
-            .info-filter-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-    }       
-}
-
-@media screen and (max-width:936px) {
-    .carousel {
-        .carousel-item {
-            .carousel-content { gap: 3rem;
-                p { width: 100%; }
-
-                h1 { font-size: 3rem; line-height: 3rem; }
-            }
-        }
-    }
-
-    .main-container {
-        main {
-            .card {
-                .card-container { grid-template-columns: repeat(1, 1fr); }
-            }
-        }
-    }
-
-    .section-container {
-        .section {
-            .faq-section {
-                .faq-qn {
-                    .faq-qn-open-close {
-                        .open-close-icon { width: 2rem; height: 2rem; font-size: 1rem; }
-                    }
+    }    
+    @media screen and (max-width:1366px) {
+        .carousel {
+            .carousel-item {
+                .carousel-content { 
+                    h1 { font-size: 5rem; line-height: 6rem; }
                 }
             }
         }
     }    
-}
-
-@media screen and (max-width:510px) {
-    .carousel-content {
-        h1 { font-size: 1.5rem; line-height: 1.9rem; }
-    }
-}
-
-@media screen and (max-width:465px) {    
-
-    .card-div { height: 460px; 
-        .card-img { height: 351px; }
-    }
-}
-
-@media screen and (max-width:768px) {      
+    @media screen and (max-width:1024px) {
+        
+        .carousel {
+            .carousel-item {
+                .carousel-content { padding: 0 7.5rem; align-items: flex-start; 
+                
+                    h1 { font-size: 3rem; line-height: 4rem; text-align: left; }
     
-    .carousel {
-        .carousel-item {
-            .carousel-content {
-                p { font-size: 1rem; }
-                h1 { font-size: 2rem; }
+                    p { text-align: left; display: flex; width: 30.5rem; height: 6.063rem; flex-direction: column; justify-content: center; flex-shrink: 0; color: #ffffff; font-family: "Urbanist", sans-serif; font-size: 1.5rem; font-style: normal; font-weight: 600; line-height: 138.004%; text-transform: capitalize; }
+                }
             }
-
-            img { object-fit: cover; }
+    
+            .slick-prev { top: 50%; }
+            .slick-next { top: 50%; }
+    
         }
-
-        .slick-next { top: 70%; }
-        .slick-prev { top: 70%; }
-
-    }
-
-    .information-container{
-        .info-section { gap: 1.2rem; 
-            .info-filter-grid { grid-template-columns: repeat(1, 1fr); 
-                .info-div-card{
-                    .info-div-card-content{
-                        h3 { font-size: 1.3rem; }
+        
+        .main-container { padding: 3rem 2rem; 
+            main {
+                .m-part-div {
+                    .team-btns { overflow-x: auto; }
+                }
+            }
+        }
+    
+        .section-container { padding: 3rem 2rem; }
+    
+        .information-container { padding: 3rem 2rem; 
+            .info-section{
+                .info-filter-btns { gap: 1.5rem; display: inline-flex; text-wrap: nowrap; width: 100%; }
+                .info-filter-grid { grid-template-columns: repeat(2, 1fr); }
+            }
+        }       
+    }    
+    @media screen and (max-width:920px) {
+        .carousel {
+            .carousel-item {
+                .carousel-content { gap: 3rem;
+                    p { width: 100%; }
+    
+                    h1 { font-size: 3rem; line-height: 4rem; text-align: center;}
+                }
+            }
+        }
+    
+        .main-container {
+            main {
+                .card {
+                    .card-container { grid-template-columns: repeat(1, 1fr); }
+                }
+            }
+        }
+    
+        .section-container {
+            .section {
+                .faq-section {
+                    .faq-qn {
+                        .faq-qn-open-close {
+                            .open-close-icon { width: 2rem; height: 2rem; font-size: 1rem; }
+                        }
                     }
                 }
-            } 
-
-            .info-filter-btns {
-                button { text-align: center; height: 100%; padding: 0.5rem 2rem; font-size: 1rem; line-height: normal; }
+            }
+        }    
+    }
+    @media screen and (max-width:768px) {      
+        
+        .carousel {
+            .carousel-item {
+                .carousel-content { gap: 6rem; top: 16rem;
+                    p { font-size: 1rem; }
+                    h1 { font-size: 2rem; line-height: 3rem;}
+                }
+    
+                img { object-fit: cover; }
+            }
+    
+            .slick-next { top: 50%; }
+            .slick-prev { top: 50%; }
+    
+        }
+    
+        .information-container{
+            .info-section { gap: 1.2rem; 
+                .info-filter-grid { grid-template-columns: repeat(1, 1fr); 
+                    .info-div-card{
+                        .info-div-card-content{
+                            h3 { font-size: 1.3rem; }
+                        }
+                    }
+                } 
+    
+                .info-filter-btns {
+                    button { text-align: center; height: 100%; padding: 0.5rem 2rem; font-size: 1rem; line-height: normal; }
+                }
             }
         }
-    }
-
-    .main-container {
-        main {
-            .m-part-div { gap: 1.3rem;
-                .main-title {
-                    h1 { font-size: 1.3rem; }
-                }
-                .team-btns {
-                    button { width: 100%; height: 100%; padding: 1rem 1rem; line-height: normal; font-size: 1rem; }
-                }
-            }   
-            .card {
-                .card-title { font-size: 1.3rem; }
-                .card-container {
-                    .card-div {
-                        .card-body {
-                            .card-name {
-                                .name-div { font-size: 1.2rem; }
-                                .name-details { font-size: 1rem; }
-                            }
-                            .linkedin-img {
-                                a {
-                                    img { width: 3rem; }
+    
+        .main-container {
+            main {
+                .m-part-div { gap: 1.3rem;
+                    .main-title {
+                        h1 { font-size: 1.3rem; }
+                    }
+                    .team-btns {
+                        button { width: 100%; height: 100%; padding: 1rem 1rem; line-height: normal; font-size: 1rem; }
+                    }
+                }   
+                .card {
+                    .card-title { font-size: 1.3rem; }
+                    .card-container {
+                        .card-div {
+                            .card-body {
+                                .card-name {
+                                    .name-div { font-size: 1.2rem; }
+                                    .name-details { font-size: 1rem; }
+                                }
+                                .linkedin-img {
+                                    a {
+                                        img { width: 3rem; }
+                                    }
                                 }
                             }
                         }
                     }
-                }
-            }          
-        }
-    }
-       
-    .section-container {
-        section {
-            .main-title {
-                h1 { font-size: 1.3rem; }
+                }          
             }
-            .faq-section{
-                .faq-qn { padding: 0; 
-                    .faq-qn-open-close{
-                        h3 { font-size: 1rem; }
+        }
+           
+        .section-container {
+            section {
+                .main-title {
+                    h1 { font-size: 1.3rem; }
+                }
+                .faq-section{
+                    .faq-qn { padding: 0; 
+                        .faq-qn-open-close{
+                            h3 { font-size: 1rem; }
+                        }
                     }
                 }
             }
+        }    
+    }    
+    @media screen and (max-width:640px) {
+        .carousel {
+            .carousel-item {
+                .carousel-content { padding: 0 3rem;
+                    h1 { font-size: 1.5rem; line-height: 2.2rem; text-align: left; }
+                }
+            }
+        }
+    }    
+    @media screen and (max-width:465px) {    
+    
+        .card-div { height: 460px; 
+            .card-img { height: 351px; }
         }
     }    
 }

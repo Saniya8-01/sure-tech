@@ -12,45 +12,17 @@
   overflow: hidden;
   display: flex;
 }
-.main-body .carousel button {
+.main-body .carousel .slick-dots {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   position: absolute;
-  top: 50%;
+  bottom: 0;
   transform: translateY(-50%);
   z-index: 20;
-}
-.main-body .carousel .slick-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 25px;
-  font-weight: 900;
-  background: none;
-  padding: 10px;
-  border-style: none;
-  cursor: pointer;
-  user-select: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 4;
-  left: 30px;
-}
-.main-body .carousel .slick-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 25px;
-  font-weight: 900;
-  background: none;
-  padding: 10px;
-  border-style: none;
-  cursor: pointer;
-  user-select: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 4;
-  right: 30px;
+  list-style: none;
 }
 .main-body .carousel .carousel-item {
   width: 100%;
@@ -437,34 +409,35 @@
   text-align: left;
   color: #ffffff;
 }
-
 @media screen and (max-width: 1880px) {
-  .carousel .carousel-item .carousel-content h1 {
+  .main-body .carousel .carousel-item .carousel-content h1 {
     width: 100%;
     font-size: 5.25rem;
     line-height: 123px;
   }
 }
-@media screen and (max-width: 1643px) {
-  .carousel .carousel-item .carousel-content {
+@media screen and (max-width: 1660px) {
+  .main-body .carousel .carousel-item .carousel-content {
     width: 100%;
   }
 }
-@media screen and (max-width: 1340px) {
-  .carousel .carousel-item .carousel-content h1 {
+@media screen and (max-width: 1366px) {
+  .main-body .carousel .carousel-item .carousel-content h1 {
     font-size: 5rem;
     line-height: 6rem;
   }
 }
-@media screen and (max-width: 1055px) {
-  .carousel .carousel-item .carousel-content {
-    padding: 0 2rem;
+@media screen and (max-width: 1024px) {
+  .main-body .carousel .carousel-item .carousel-content {
+    padding: 0 7.5rem;
     align-items: flex-start;
   }
-  .carousel .carousel-item .carousel-content h1 {
+  .main-body .carousel .carousel-item .carousel-content h1 {
+    font-size: 3rem;
+    line-height: 4rem;
     text-align: left;
   }
-  .carousel .carousel-item .carousel-content p {
+  .main-body .carousel .carousel-item .carousel-content p {
     text-align: left;
     display: flex;
     width: 30.5rem;
@@ -480,132 +453,142 @@
     line-height: 138.004%;
     text-transform: capitalize;
   }
-  .carousel .slick-prev {
-    top: 90%;
+  .main-body .carousel .slick-prev {
+    top: 50%;
   }
-  .carousel .slick-next {
-    top: 90%;
+  .main-body .carousel .slick-next {
+    top: 50%;
   }
-  .main-container {
+  .main-body .main-container {
     padding: 3rem 2rem;
   }
-  .main-container main .m-part-div .team-btns {
+  .main-body .main-container main .m-part-div .team-btns {
     overflow-x: auto;
   }
-  .section-container {
+  .main-body .section-container {
     padding: 3rem 2rem;
   }
-  .information-container {
+  .main-body .information-container {
     padding: 3rem 2rem;
   }
-  .information-container .info-section .info-filter-btns {
+  .main-body .information-container .info-section .info-filter-btns {
     gap: 1.5rem;
     display: inline-flex;
     text-wrap: nowrap;
     width: 100%;
   }
-  .information-container .info-section .info-filter-grid {
+  .main-body .information-container .info-section .info-filter-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 936px) {
-  .carousel .carousel-item .carousel-content {
+@media screen and (max-width: 920px) {
+  .main-body .carousel .carousel-item .carousel-content {
     gap: 3rem;
   }
-  .carousel .carousel-item .carousel-content p {
+  .main-body .carousel .carousel-item .carousel-content p {
     width: 100%;
   }
-  .carousel .carousel-item .carousel-content h1 {
+  .main-body .carousel .carousel-item .carousel-content h1 {
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 4rem;
+    text-align: center;
   }
-  .main-container main .card .card-container {
+  .main-body .main-container main .card .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .section-container .section .faq-section .faq-qn .faq-qn-open-close .open-close-icon {
+  .main-body .section-container .section .faq-section .faq-qn .faq-qn-open-close .open-close-icon {
     width: 2rem;
     height: 2rem;
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 510px) {
-  .carousel-content h1 {
-    font-size: 1.5rem;
-    line-height: 1.9rem;
-  }
-}
-@media screen and (max-width: 465px) {
-  .card-div {
-    height: 460px;
-  }
-  .card-div .card-img {
-    height: 351px;
-  }
-}
 @media screen and (max-width: 768px) {
-  .carousel .carousel-item .carousel-content p {
+  .main-body .carousel .carousel-item .carousel-content {
+    gap: 6rem;
+    top: 16rem;
+  }
+  .main-body .carousel .carousel-item .carousel-content p {
     font-size: 1rem;
   }
-  .carousel .carousel-item .carousel-content h1 {
+  .main-body .carousel .carousel-item .carousel-content h1 {
     font-size: 2rem;
+    line-height: 3rem;
   }
-  .carousel .carousel-item img {
+  .main-body .carousel .carousel-item img {
     object-fit: cover;
   }
-  .carousel .slick-next {
-    top: 70%;
+  .main-body .carousel .slick-next {
+    top: 50%;
   }
-  .carousel .slick-prev {
-    top: 70%;
+  .main-body .carousel .slick-prev {
+    top: 50%;
   }
-  .information-container .info-section {
+  .main-body .information-container .info-section {
     gap: 1.2rem;
   }
-  .information-container .info-section .info-filter-grid {
+  .main-body .information-container .info-section .info-filter-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .information-container .info-section .info-filter-grid .info-div-card .info-div-card-content h3 {
+  .main-body .information-container .info-section .info-filter-grid .info-div-card .info-div-card-content h3 {
     font-size: 1.3rem;
   }
-  .information-container .info-section .info-filter-btns button {
+  .main-body .information-container .info-section .info-filter-btns button {
     text-align: center;
     height: 100%;
     padding: 0.5rem 2rem;
     font-size: 1rem;
     line-height: normal;
   }
-  .main-container main .m-part-div {
+  .main-body .main-container main .m-part-div {
     gap: 1.3rem;
   }
-  .main-container main .m-part-div .main-title h1 {
+  .main-body .main-container main .m-part-div .main-title h1 {
     font-size: 1.3rem;
   }
-  .main-container main .m-part-div .team-btns button {
+  .main-body .main-container main .m-part-div .team-btns button {
     width: 100%;
     height: 100%;
     padding: 1rem 1rem;
     line-height: normal;
     font-size: 1rem;
   }
-  .main-container main .card .card-title {
+  .main-body .main-container main .card .card-title {
     font-size: 1.3rem;
   }
-  .main-container main .card .card-container .card-div .card-body .card-name .name-div {
+  .main-body .main-container main .card .card-container .card-div .card-body .card-name .name-div {
     font-size: 1.2rem;
   }
-  .main-container main .card .card-container .card-div .card-body .card-name .name-details {
+  .main-body .main-container main .card .card-container .card-div .card-body .card-name .name-details {
     font-size: 1rem;
   }
-  .main-container main .card .card-container .card-div .card-body .linkedin-img a img {
+  .main-body .main-container main .card .card-container .card-div .card-body .linkedin-img a img {
     width: 3rem;
   }
-  .section-container section .main-title h1 {
+  .main-body .section-container section .main-title h1 {
     font-size: 1.3rem;
   }
-  .section-container section .faq-section .faq-qn {
+  .main-body .section-container section .faq-section .faq-qn {
     padding: 0;
   }
-  .section-container section .faq-section .faq-qn .faq-qn-open-close h3 {
+  .main-body .section-container section .faq-section .faq-qn .faq-qn-open-close h3 {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .main-body .carousel .carousel-item .carousel-content {
+    padding: 0 3rem;
+  }
+  .main-body .carousel .carousel-item .carousel-content h1 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 465px) {
+  .main-body .card-div {
+    height: 460px;
+  }
+  .main-body .card-div .card-img {
+    height: 351px;
   }
 }/*# sourceMappingURL=home.css.map */

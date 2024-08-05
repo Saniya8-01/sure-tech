@@ -1,5 +1,5 @@
 .footer-container {
-  padding: 7.5rem 7.5rem;
+  padding: 0rem 7.5rem 7.5rem 7.5rem;
 }
 .footer-container footer {
   width: 100%;
@@ -494,43 +494,30 @@
   justify-content: center;
   width: 2.5rem;
 }
-
-@media screen and (max-width: 1476px) {
-  footer .footer-div-one, footer .footer-div-two, footer .footer-div-last {
+@media screen and (max-width: 1660px) {
+  .footer-container footer .footer-div-one {
+    height: 100%;
+  }
+  .footer-container footer .footer-div-two {
+    height: 100%;
+  }
+  .footer-container footer .footer-div-last {
     height: 100%;
   }
 }
-@media screen and (max-width: 1424px) {
-  footer {
+@media screen and (max-width: 1366px) {
+  .footer-container footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 1024px) {
   .footer-container {
-    padding: 3rem 2rem;
+    padding: 0 2rem 2rem 2rem;
   }
 }
-@media screen and (max-width: 936px) {
-  footer {
+@media screen and (max-width: 920px) {
+  .footer-container footer {
     grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media screen and (max-width: 640px) {
-  .footer-container footer .footer-div-two .f-form form .f-form-em-mob {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 465px) {
-  .footer-container footer .footer-div-one .footer-div-prod-services {
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-  .footer-container footer .footer-div-last .footer-div-three {
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-  .footer-container footer .footer-div-last .footer-div-four a img {
-    width: 1.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -556,5 +543,23 @@
   .footer-container footer .footer-div-two .f-req-title h1 {
     font-size: 1.2rem;
     line-height: 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer-container footer .footer-div-two .f-form form .f-form-em-mob {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 465px) {
+  .footer-container footer .footer-div-one .footer-div-prod-services {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .footer-container footer .footer-div-last .footer-div-three {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .footer-container footer .footer-div-last .footer-div-four a img {
+    width: 1.5rem;
   }
 }/*# sourceMappingURL=footer.css.map */
