@@ -1298,6 +1298,12 @@ summary {
     line-height: 6rem;
   }
 }
+@media screen and (max-width: 1280px) {
+  .main-body .carousel .carousel-item .carousel-content h1 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   .main-body .carousel .carousel-item .carousel-content {
     padding: 0 7.5rem;
@@ -1355,6 +1361,7 @@ summary {
 @media screen and (max-width: 920px) {
   .main-body .carousel .carousel-item .carousel-content {
     gap: 3rem;
+    padding: 0 2rem;
   }
   .main-body .carousel .carousel-item .carousel-content p {
     width: 100%;
@@ -1362,7 +1369,7 @@ summary {
   .main-body .carousel .carousel-item .carousel-content h1 {
     font-size: 3rem;
     line-height: 4rem;
-    text-align: center;
+    text-align: left;
   }
   .main-body .main-container main .card .card-container {
     grid-template-columns: repeat(1, 1fr);
@@ -1375,7 +1382,6 @@ summary {
 }
 @media screen and (max-width: 768px) {
   .main-body .carousel .carousel-item .carousel-content {
-    gap: 6rem;
     top: 16rem;
   }
   .main-body .carousel .carousel-item .carousel-content p {
@@ -1450,8 +1456,8 @@ summary {
     padding: 0 3rem;
   }
   .main-body .carousel .carousel-item .carousel-content h1 {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+    font-size: 2rem;
+    line-height: 3rem;
     text-align: left;
   }
 }

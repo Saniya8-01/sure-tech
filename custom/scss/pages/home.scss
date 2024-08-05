@@ -182,7 +182,16 @@
                 }
             }
         }
-    }    
+    }
+    @media screen and (max-width:1280px) {
+        .carousel {
+            .carousel-item {
+                .carousel-content { 
+                    h1 { font-size: 3.5rem; line-height: 5rem; }
+                }
+            }
+        }
+    }     
     @media screen and (max-width:1024px) {
         
         .carousel {
@@ -220,10 +229,10 @@
     @media screen and (max-width:920px) {
         .carousel {
             .carousel-item {
-                .carousel-content { gap: 3rem;
+                .carousel-content { gap: 3rem; padding: 0 2rem;
                     p { width: 100%; }
     
-                    h1 { font-size: 3rem; line-height: 4rem; text-align: center;}
+                    h1 { font-size: 3rem; line-height: 4rem; text-align: left;}
                 }
             }
         }
@@ -252,7 +261,7 @@
         
         .carousel {
             .carousel-item {
-                .carousel-content { gap: 6rem; top: 16rem;
+                .carousel-content { top: 16rem;
                     p { font-size: 1rem; }
                     h1 { font-size: 2rem; line-height: 3rem;}
                 }
@@ -331,7 +340,7 @@
         .carousel {
             .carousel-item {
                 .carousel-content { padding: 0 3rem;
-                    h1 { font-size: 1.5rem; line-height: 2.2rem; text-align: left; }
+                    h1 { font-size: 2rem; line-height: 3rem; text-align: left; }
                 }
             }
         }
