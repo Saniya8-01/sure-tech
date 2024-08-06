@@ -9,7 +9,18 @@
         // .slick-next { position: absolute; top: 50%; transform: translateY(-50%); font-size: 25px; font-weight: 900; background: none; padding: 10px; border-style: none; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: center; z-index: 4; right: 30px; }
 
         .slick-dots {
-            width: 100%; display: flex; align-items: center; justify-content: center; gap: 1rem; position: absolute; bottom: 0; transform: translateY(-50%); z-index: 20; list-style: none;            
+            width: 100%; display: flex; align-items: center; justify-content: center; gap: 1rem; position: absolute; bottom: 0; transform: translateY(-50%); z-index: 20; list-style: none;             
+            li {
+                button {
+                    font-size: 0;
+                    background: #fff;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 100%;
+                    border-style: none;
+                    box-shadow: none;
+                }
+            }
         }
 
         .carousel-item { width: 100%; display: flex; position: relative; 

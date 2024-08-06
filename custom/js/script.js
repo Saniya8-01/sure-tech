@@ -32,14 +32,7 @@ $(document).ready(function () {
 
     $(".sidebar-close").click(function () {
         $(".sidebar").css("display", "none");
-    })
-
-    function changeButtonContent(buttonClass, imagePath) {
-        $(buttonClass).html('<img src="' + imagePath + '" alt="icon">');
-    }
-
-    changeButtonContent('.slick-prev', '../../assets/icons/left-icon.svg');
-    changeButtonContent('.slick-next', '../../assets/icons/right-icon.svg');
+    })  
 
     acc.first().next().css("display", "flex").prev().find(".open-close-icon").html("-");
 

@@ -24,6 +24,15 @@
   z-index: 20;
   list-style: none;
 }
+.main-body .carousel .slick-dots li button {
+  font-size: 0;
+  background: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  border-style: none;
+  box-shadow: none;
+}
 .main-body .carousel .carousel-item {
   width: 100%;
   display: flex;
